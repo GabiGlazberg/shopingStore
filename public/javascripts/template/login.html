@@ -1,6 +1,6 @@
 <div ng-controller="loginCtrl" class="login">
 
-    <form action="">
+    <form class="login--form" action="">
 
         <md-input-container>
             <input name="username" ng-model="username" placeholder="ID">
@@ -9,6 +9,8 @@
         <md-input-container>
             <input type="password" name="password" ng-model="password" placeholder="Password">
         </md-input-container>
+
+        <br>
 
         <md-button ng-click="login()" class="md-raised md-primary">Login</md-button>
 

@@ -14,8 +14,7 @@ App.controller('loginCtrl', function($http, $scope, $state) {
         $scope.res = loginService.init($scope.username, $scope.password);
 
         $scope.res.then(user => {
-            if (!user) {
-                console.log('err');
+            if (!user || user.status) {
                 return $state.go('login');
             }
 
