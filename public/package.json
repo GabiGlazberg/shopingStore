@@ -4,6 +4,23 @@
     "angular": "^1.6.8",
     "angular-animate": "^1.6.8",
     "angular-aria": "^1.6.8",
-    "angular-material": "^1.1.6"
+    "angular-material": "^1.1.6",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "bable-loader": "0.0.1-security",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "html-webpack-plugin": "^2.30.1",
+    "purify-css": "^1.2.5",
+    "purifycss-webpack": "^0.7.0",
+    "webpack": "^3.11.0",
+    "webpack-dev-server": "^2.11.1",
+    "webpack-watch-server": "^1.2.1"
+  },
+  "scripts": {
+    "babel": "babel --presets es2015 js/main.js -o build/main.bundle.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack -p src/main.js dist/bundle.js",
+    "dev": "webpack-watch-server",
+    "start": "webpack-dev-server --config webpack.config.js"
   }
 }
