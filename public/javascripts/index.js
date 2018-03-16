@@ -8,9 +8,5 @@ import './servcie/loginService';
 import './ctrl/loginCtrl';
 import './ctrl/homeCtrl';
 import './ctrl/registerCtrl';
-import './servcie/loginService';
 import './factory/registerFactory';
 import './routes/router';
-
-
-

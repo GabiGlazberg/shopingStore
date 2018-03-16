@@ -1,5 +1,4 @@
 import App from '../app';
-import LoginService from '../servcie/loginService';
 
 App.config(function($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise('/');
@@ -18,23 +17,18 @@ App.config(function($stateProvider, $urlRouterProvider) {
 
     .state('register.profile', {
         url: '/profile',
-        templateUrl: 'javascripts/template/register-form1.html'
+        templateUrl: 'javascripts/template/partial/register-form1.html'
     })
 
     .state('register.address', {
         url: '/address',
-        templateUrl: 'javascripts/template/register-form2.html'
+        templateUrl: 'javascripts/template/partial/register-form2.html'
     })
 
     .state('home', {
         url: '/home',
         templateUrl: 'javascripts/template/home.html',
-        resolve: {
-            loginService: 'LoginService'
-        },
-        controller: function($state, LoginService) {
-            if (!LoginService) $state.go('login');
-        }
+        controller: 'loginCtrl'
     });
 
 });

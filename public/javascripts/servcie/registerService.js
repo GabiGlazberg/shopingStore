@@ -1,6 +1,4 @@
-var App = require('../app');
-
-class RegisterService 
+class RegisterService
 {
     constructor ($http) {
         this.http = $http
@@ -13,24 +11,10 @@ class RegisterService
         }).then(res => {
             return res.data;
         }).catch(err => {
-            return false;
+            return err;
         });
     } 
 }
 
 export default RegisterService;
 
-// export default App.service('registerService', function ($http) {
-//     return function (formData) {
-//         if (!formData) return;
-//         return $http({
-//             method: 'POST',
-//             url: '/register',
-//             data: formData
-//         }).then(res => {
-//             return res.data;
-//         }).catch(err => {
-//             return false;
-//         });
-//     }
-// });

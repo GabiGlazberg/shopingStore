@@ -3,15 +3,18 @@
     <form action="">
 
         <md-input-container>
-            <input type="text" name="username" ng-model="formData.username" placeholder="ID">
+            <input name="username" ng-model="username" placeholder="ID">
         </md-input-container>
         <br>
         <md-input-container>
-            <input type="password" name="password" ng-model="formData.password" placeholder="Password">
+            <input type="password" name="password" ng-model="password" placeholder="Password">
         </md-input-container>
 
-        <md-button class="md-raised md-primary" ng-disabled="disableTheForm" ui-sref="register">Register</md-button>
+        <md-button ng-click="login()" class="md-raised md-primary">Login</md-button>
 
     </form>
-    
+
+    <footer>
+        <md-button class="md-raised md-primary" ui-sref="register">Register</md-button>
+    </footer>
 </div>

@@ -10,17 +10,21 @@ App.controller('registerCtrl', function($http, $scope, $state, registerFactory) 
         $state.go('register.profile');
     }
 
-    $scope.disableTheForm = false;
-
     $scope.registerTheForm = () => {
         $scope.registerFactory = registerFactory.returnValue($scope.formData);
         
         if (!$scope.registerFactory) return;
 
         const registerService = new RegisterService($http);
-        registerService.init($scope.formData);
-        if (registerService) {
-            $state.go('home');
-        }        
+
+        $scope.res = registerService.init($scope.formData);
+
+        $scope.res.then(user => {
+            if (!user) {
+                return $state.go('register');
+            }
+
+            return $state.go('home');
+        });
     }
 });

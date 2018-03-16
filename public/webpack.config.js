@@ -56,7 +56,7 @@ module.exports = {
     },
 
     plugins: [
-
+        // new ExtractTextPlugin('css/app.css'),
         new ExtractTextPlugin("styles.css"),
         new PurifyCSSPlugin({
             // Give paths to parse for rules. These should be absolute!
