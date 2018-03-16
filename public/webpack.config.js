@@ -12,7 +12,6 @@ module.exports = {
     },
 
     output: {
-
         path: path.resolve(__dirname, './dist'),
         filename: '[name].js'
 
@@ -68,7 +67,5 @@ module.exports = {
             template: './index.html',
         }),
         new webpack.HotModuleReplacementPlugin()
-
     ]
-
 }
