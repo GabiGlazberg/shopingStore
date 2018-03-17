@@ -3,7 +3,7 @@ extends layouts/main
 block content
     h1= Login
     .jumbotron
-        form.form-inline(name="add-estimation", method="post", id="login-form" action="login")
+        form.form-inline(method="post", id="login-form" action="login")
             .form-group
                 label(for='name') Name
                 input#name.form-control(type='text', aria-describedby='name', placeholder='Enter name', name="username")

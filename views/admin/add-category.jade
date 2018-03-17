@@ -1,0 +1,15 @@
+extends layouts/main
+
+block content
+    include ./partial/navbar.jade
+    h1= Login
+    .jumbotron
+        form.form-inline(method="post", id="login-form" action="add-category")
+            .form-group
+                label(for='name') Category name
+                br
+                input#name.form-control(type='text', aria-describedby='name', placeholder='Enter name', name="name")
+            br
+
+            br
+            button.btn.btn-primary(type='submit') Submit

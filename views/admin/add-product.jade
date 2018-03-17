@@ -1,0 +1,22 @@
+extends layouts/main
+
+block content
+    include ./partial/navbar.jade
+    h1= Login
+    .jumbotron
+        form.form-inline(method="post", id="add-product-form" action="add-product")
+            .form-group
+                label(for='name') Name
+                input#name.form-control(type='text', aria-describedby='name', placeholder='Enter name', name="username")
+            br
+            .form-group
+                label(for='category') Category
+                select#category.form-control(name='category_id')
+                    - for category in categories
+                        option(value='#{category.id}') #{category.name}
+            br
+            br
+            button.btn.btn-primary(type='submit') Submit
+
+
+

@@ -23,6 +23,8 @@ var category = require('./routes/api/category');
 //-- Admin --//
 var adminLogin = require('./routes/admin/login');
 var admin = require('./routes/admin/admin');
+var addProduct = require('./routes/admin/addProduct');
+var addCategory = require('./routes/admin/addCategory');
 
 var app = express();
 
@@ -61,6 +63,8 @@ app.use('/api/category', category);
 //-- Admin --//
 app.use('/admin', admin);
 app.use('/admin/login', adminLogin);
+app.use('/admin/add-category', addCategory);
+app.use('/admin/add-product', addProduct);
 
 
 // catch 404 and forward to error handler
