@@ -6,31 +6,18 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var passport = require('passport');
 var Strategy = require('passport-local').Strategy;
-var mongoose = require('mongoose');
 var session = require('express-session');
-var User = require('./model/User.js');
-
-var connection = 'mongodb://localhost:27017/shoping_project';
-
-mongoose.connect(connection, {
-  useMongoClient: true
-});
-
-mongoose.Promise = global.Promise;
-var db = mongoose.connection;
-
-db.on('error', function (err) {
-  console.log(err);
-});
-db.once('open', function () {
-  console.log('connected to mongo');
-});
+var User = require('./model/User');
+var db = require('./db');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
 var login = require('./routes/login');
 var register = require('./routes/register');
 var home = require('./routes/home');
+
+//-- API --//
+var product = require('./routes/api/product');
 
 var app = express();
 
@@ -56,12 +43,14 @@ passport.use(new Strategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
-
 app.use('/', index);
 app.use('/users', users);
 app.use('/login', login);
 app.use('/register', register);
 app.use('/home', home);
+
+//-- API --//
+app.use('/api/product', product);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
