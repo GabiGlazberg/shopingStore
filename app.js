@@ -18,6 +18,10 @@ var home = require('./routes/home');
 
 //-- API --//
 var product = require('./routes/api/product');
+var category = require('./routes/api/category');
+
+//-- Admin --//
+var adminLogin = require('./routes/admin/login');
 
 var app = express();
 
@@ -51,6 +55,11 @@ app.use('/home', home);
 
 //-- API --//
 app.use('/api/product', product);
+app.use('/api/category', category);
+
+//-- Admin --//
+app.use('/admin/login', adminLogin);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
