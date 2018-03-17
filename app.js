@@ -15,6 +15,8 @@ var users = require('./routes/users');
 var login = require('./routes/login');
 var register = require('./routes/register');
 var home = require('./routes/home');
+var category = require('./routes/search/category');
+var product = require('./routes/search/product');
 
 //-- Admin --//
 var adminLogin = require('./routes/admin/login');
@@ -51,6 +53,8 @@ app.use('/users', users);
 app.use('/login', login);
 app.use('/register', register);
 app.use('/home', home);
+app.use('/get-categories', category);
+app.use('/get-products', product);
 
 //-- Admin --//
 app.use('/admin', admin);

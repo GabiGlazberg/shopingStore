@@ -1,5 +1,4 @@
-import LoginService from '../servcie/loginService';
-
+import LoginService from '../service/loginService';
 import App from '../app';
 
 App.controller('loginCtrl', function($http, $scope, $state) {

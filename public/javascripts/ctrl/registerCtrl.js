@@ -1,5 +1,5 @@
 import App from '../app';
-import RegisterService from '../servcie/registerService'
+import RegisterService from '../service/registerService'
 
 App.controller('registerCtrl', function($http, $scope, $state, registerFactory) {
     $scope.routeFlag = {};

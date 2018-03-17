@@ -6,13 +6,14 @@ require('../node_modules/@uirouter/angularjs/release/angular-ui-router.min.js');
 
 var css = require('../stylesheets/scss/main.scss');
 
-import './servcie/loginService';
+import './service/loginService';
 
 import './ctrl/loginCtrl';
 import './ctrl/homeCtrl';
 import './ctrl/registerCtrl';
 import './ctrl/navbar';
 import './ctrl/sidebarCtrl';
+import './ctrl/categoryCtrl';
 
 import './drv/navbarDrv';
 import './drv/sidebarDrv';

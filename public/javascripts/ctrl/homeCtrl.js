@@ -1,5 +1,5 @@
 import App from '../app';
-import AuthService from '../servcie/authService';
+import AuthService from '../service/authService';
 
 App.controller('homeCtrl', function($scope, $http, $state) {
 
@@ -15,4 +15,6 @@ App.controller('homeCtrl', function($scope, $http, $state) {
     
         $scope.username = user;
     });
+
+    $state.go('home.category');
 });

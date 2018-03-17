@@ -29,6 +29,12 @@ App.config(function($stateProvider, $urlRouterProvider) {
         url: '/home',
         templateUrl: 'javascripts/template/home.html',
         controller: 'loginCtrl'
+    })
+
+    .state('home.category', {
+        url: '/category',
+        templateUrl: 'javascripts/template/category.html',
+        controller: 'categoryCtrl'
     });
 
 });
