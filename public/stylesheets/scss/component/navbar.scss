@@ -1,0 +1,28 @@
+.main-navbar {
+  position: relative;
+  top: 0;
+  right: 0;
+  min-height: 150px;
+  max-height: 200px;
+  display: block;
+  background-color: #FFF2E0;
+    .logo-image {
+      position: absolute;
+      height: 100px;
+      width: 100px;
+      left: 31px;
+      top: 16px;
+      img {
+        height: 100px;
+        width: 100px;
+      }
+    }
+
+  .username {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    right: 31px;
+    top: 16px;
+  }
+}
