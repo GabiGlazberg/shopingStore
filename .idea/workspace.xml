@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bdacd59b-2deb-4960-b25b-6a2af57cccf5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/admin/style/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/routes/admin/addCategory.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/admin/partial/navbar.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/routes/api/category.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/routes/api/product.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.md" afterPath="$PROJECT_DIR$/readme.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/admin/addProduct.js" afterPath="$PROJECT_DIR$/routes/admin/addProduct.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/admin/admin.js" afterPath="$PROJECT_DIR$/routes/admin/admin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/admin/add-category.jade" afterPath="$PROJECT_DIR$/views/admin/add-category.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/admin/add-product.jade" afterPath="$PROJECT_DIR$/views/admin/add-product.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/admin/index.jade" afterPath="$PROJECT_DIR$/views/admin/index.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/admin/layouts/main.jade" afterPath="$PROJECT_DIR$/views/admin/layouts/main.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/admin/login.jade" afterPath="$PROJECT_DIR$/views/admin/login.jade" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -61,18 +52,18 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1197">
-              <caret line="66" column="40" lean-forward="false" selection-start-line="66" selection-start-column="30" selection-end-line="66" selection-end-column="40" />
+            <state relative-caret-position="294">
+              <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/admin/admin.js">
+      <file leaf-file-name="readme.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/readme.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="210">
+              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -118,7 +109,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="addProduct.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="addProduct.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/admin/addProduct.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="223">
@@ -195,15 +186,15 @@
         <option value="$PROJECT_DIR$/views/admin/index.jade" />
         <option value="$PROJECT_DIR$/views/admin/layouts/main.jade" />
         <option value="$PROJECT_DIR$/views/admin/login.jade" />
-        <option value="$PROJECT_DIR$/readme.md" />
         <option value="$PROJECT_DIR$/routes/admin/admin.js" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/views/admin/partial/navbar.jade" />
         <option value="$PROJECT_DIR$/views/admin/add-category.jade" />
         <option value="$PROJECT_DIR$/routes/admin/addCategory.js" />
         <option value="$PROJECT_DIR$/views/admin/add-product.jade" />
         <option value="$PROJECT_DIR$/model/Product.js" />
         <option value="$PROJECT_DIR$/routes/admin/addProduct.js" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/readme.md" />
       </list>
     </option>
   </component>
@@ -389,12 +380,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1521181382309</updated>
-      <workItem from="1521181383489" duration="56657000" />
+      <workItem from="1521181383489" duration="56829000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56657000" />
+    <option name="totallyTimeSpent" value="56829000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -731,14 +722,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/readme.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/users.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -819,14 +802,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1197">
-          <caret line="66" column="40" lean-forward="false" selection-start-line="66" selection-start-column="30" selection-end-line="66" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/model/Product.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -847,6 +822,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="223">
           <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>
