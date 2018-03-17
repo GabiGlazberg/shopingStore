@@ -1,15 +1,10 @@
 const passport = require('passport');
 
 const adminAuth = (req, res, next) => {
-    if (req.user) {
-        if (req.user.role === 'admin' || req.user.role === 'super') {
-            next();
-        } else {
-            res.redirect('/');
-        }
-    } else {
-        res.redirect('/');
+    if (!req.user || req.user.role != 'admin') {
+        res.render('admin/login');
     }
+    next();
 }
 
 module.exports = adminAuth;

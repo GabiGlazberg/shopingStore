@@ -22,6 +22,7 @@ var category = require('./routes/api/category');
 
 //-- Admin --//
 var adminLogin = require('./routes/admin/login');
+var admin = require('./routes/admin/admin');
 
 var app = express();
 
@@ -58,6 +59,7 @@ app.use('/api/product', product);
 app.use('/api/category', category);
 
 //-- Admin --//
+app.use('/admin', admin);
 app.use('/admin/login', adminLogin);
 
 
