@@ -1,0 +1,16 @@
+.search-sidebar {
+  width: 500px;
+
+  .custom-icons {
+    padding: 10px;
+  }
+
+  .close-the-sidebar {
+    width: 82%;
+    .custom-icons {
+      position: absolute;
+      left: 0px;
+      top: -4px;
+    }
+  }
+}

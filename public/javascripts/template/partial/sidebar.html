@@ -1,0 +1,36 @@
+<div ng-controller="sidebarCtrl" layout="column" class="search-sidebar" ng-cloak>
+
+    <section layout="row" flex>
+
+        <md-sidenav class="md-sidenav-left" md-component-id="left"
+                    md-disable-backdrop md-whiteframe="4">
+
+            <md-content layout-margin>
+                <md-button ng-click="toggleLeft()" class="md-accent close-the-sidebar">
+                    <i class="material-icons custom-icons">keyboard_arrow_left</i>
+                    Close this Search bar
+                </md-button>
+            </md-content>
+
+
+            <h3 class="md-toolbar-tools">Search for a product</h3>
+
+            <md-input-container md-no-float class="md-block">
+                <input ng-model="searchText" placeholder="Search">
+            </md-input-container>
+
+        </md-sidenav>
+
+            <div>
+
+                <div>
+                    <md-button ng-click="toggleLeft()">
+                        <i class="material-icons custom-icons">search</i>
+                    </md-button>
+                </div>
+
+            </div>
+
+    </section>
+
+</div>

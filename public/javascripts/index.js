@@ -12,8 +12,10 @@ import './ctrl/loginCtrl';
 import './ctrl/homeCtrl';
 import './ctrl/registerCtrl';
 import './ctrl/navbar';
+import './ctrl/sidebarCtrl';
 
 import './drv/navbarDrv';
+import './drv/sidebarDrv';
 
 import './factory/registerFactory';
 import './routes/router';
