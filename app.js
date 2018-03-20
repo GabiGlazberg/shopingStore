@@ -55,6 +55,7 @@ app.use('/register', register);
 app.use('/home', home);
 app.use('/get-categories', category);
 app.use('/get-products', product);
+app.use('/get-products', product);
 
 //-- Admin --//
 app.use('/admin', admin);

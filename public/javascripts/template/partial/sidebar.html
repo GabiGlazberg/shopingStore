@@ -19,6 +19,18 @@
                 <input ng-model="searchText" placeholder="Search">
             </md-input-container>
 
+            <div class="search-result">
+                <div class="wrapper">
+                    <ul class="search-result--list">
+                        <li class="search-result--list__item" ng-repeat="product in searchProducts">
+
+                            {{product.name}}
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
         </md-sidenav>
 
             <div>

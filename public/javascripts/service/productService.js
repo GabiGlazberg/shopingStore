@@ -6,13 +6,12 @@ class ProductService {
 
     init (category) {
         return this.http.get(
-            `/get-products/?category_name=${category}`
+            `/get-products/by-category/?category_name=${category}`
         ).then(res => {
             return res.data;
         }).catch(err => {
             return err;
         });
     }
-
 }
 export default ProductService;

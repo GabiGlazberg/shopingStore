@@ -4,6 +4,7 @@ App.controller('sidebarCtrl', function ($scope, $http, $timeout, $mdSidenav) {
 
     $scope.toggleLeft = buildToggler('left');
     $scope.toggleRight = buildToggler('right');
+    $scope.searchProducts = [];
 
     function buildToggler(componentId) {
         return function() {
@@ -14,9 +15,9 @@ App.controller('sidebarCtrl', function ($scope, $http, $timeout, $mdSidenav) {
     $scope.$watch('searchText', function (value, oldValue) {
         if (value == oldValue) return;
 
-        $http.get(`/search/${value}`)
+        $http.get(`/get-products/search/?search_product=${value}`)
             .then(res => {
-                return res.data;
+                return $scope.searchProducts = res.data;
             });
     });
 });
