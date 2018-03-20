@@ -1,5 +1,14 @@
 # Shopping App
 
+## Installation
+
+- cd shopingStore
+- npm install
+
+- cd public
+- npm install
+- npm run dev/start
+
 ## Routes
 
 ## Admin
